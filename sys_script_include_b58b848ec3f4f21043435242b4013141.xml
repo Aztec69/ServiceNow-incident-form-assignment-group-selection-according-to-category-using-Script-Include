@@ -35,6 +35,7 @@ getGroupMember.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 		var groupId=this.getParameter('sysparm_group_name');
 		var gr = new GlideRecord('sys_user_grmember');
 		gr.addQuery('group',groupId);
+		gr.query();
 		while(gr.next())
 		{
 			var member={};
