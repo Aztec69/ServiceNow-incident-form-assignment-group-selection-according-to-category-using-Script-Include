@@ -50,7 +50,7 @@ getGroupMember.prototype = Object.extendsObject(AbstractAjaxProcessor, {
 		{
 		return 'sys_idIN'+gs.getProperty('getNetwork')+','+gs.getProperty('getNetworkCABManagers');
 		}
-		else
+		else if (getCategory == 'hardware')
 		{
 			return 'sys_idIN'+gs.getProperty('getHardware');
 
